@@ -1,0 +1,53 @@
+{
+    "name": "fahedaljghine/laravel-exception-mail",
+    "description": "This package will allow you to specify email addresses to send them all the exceptions that occurs in Laravel application.",
+    "keywords": [
+        "laravel",
+        "exception",
+		"mail"
+    ],
+    "homepage": "https://github.com/fahedaljghine/laravel-exception-mail",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Fahed Aljghine",
+            "email": "info@fahedaljghine.com",
+            "homepage": "https://fahedaljghine.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "illuminate/support": "^8.71|^9.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.4",
+        "orchestra/testbench": "^6.23|^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Fahedaljghine\\ExceptionMail\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Fahedaljghine\\ExceptionMail\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "phpunit --coverage-html coverage"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Fahedaljghine\\ExceptionMail\\ExceptionMailServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
