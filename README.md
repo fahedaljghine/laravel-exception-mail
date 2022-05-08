@@ -41,13 +41,13 @@ return [
 ```
 
 
-You can publish the blade email template with:
+If you would like to change the email template you can publish the blade email template with:
 
 ```bash
 php artisan vendor:publish --provider="Fahedaljghine\ExceptionMail\ExceptionMailServiceProvider" --tag="blade"
 ```
 
-The blade file which will be published at `views/emails/exception-mail.blade.php`
+The blade template will be published at `resources/views/emails/exception-mail.blade.php`
 
 ### Changelog
 
