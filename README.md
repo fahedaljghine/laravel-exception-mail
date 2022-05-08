@@ -22,7 +22,7 @@ The package will automatically register itself.
 You must publish the config with:
 
 ```bash
-php artisan vendor:publish --provider="Fahedaljghine\ExceptionMail\ExceptionMailServiceProvider" --tag="config
+php artisan vendor:publish --provider="Fahedaljghine\ExceptionMail\ExceptionMailServiceProvider" --tag="config"
 ```
 
 This is the contents of the file which will be published at `config/exception-mail.php`
@@ -39,6 +39,15 @@ return [
     ],
 ];
 ```
+
+
+You can publish the blade email template with:
+
+```bash
+php artisan vendor:publish --provider="Fahedaljghine\ExceptionMail\ExceptionMailServiceProvider" --tag="blade"
+```
+
+The blade file which will be published at `views/emails/exception-mail.blade.php`
 
 ### Changelog
 

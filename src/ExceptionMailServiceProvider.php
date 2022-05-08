@@ -12,25 +12,19 @@ class ExceptionMailServiceProvider extends ServiceProvider
     public function boot()
     {
 
-        $configPath = __DIR__ . '/../config/config.php';
-        $configKey = 'exception-mail';
-
-
         $this->publishes([
-            $configPath => config_path("$configKey.php"),
-        ]);
+            __DIR__ . '/../config/exception-mail.php' => config_path('exception-mail.php'),
+        ], 'config');
 
         $this->publishes([
             __DIR__ . '/../resources/emails' => resource_path('views/emails'),
-        ]);
-
-        $this->mergeConfigFrom(
-            $configPath, $configKey
-        );
+        ], 'blade');
     }
 
     public function register()
     {
         $this->app->singleton(ExceptionHandler::class, Handler::class);
+
+        $this->mergeConfigFrom(__DIR__ . '/../config/exception-mail.php', 'exception-mail');
     }
 }
