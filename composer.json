@@ -4,7 +4,7 @@
     "keywords": [
         "laravel",
         "exception",
-		"mail"
+        "mail"
     ],
     "homepage": "https://github.com/fahedaljghine/laravel-exception-mail",
     "license": "MIT",
@@ -49,5 +49,6 @@
         }
     },
     "minimum-stability": "dev",
+    "vendor/package": "1.0.0",
     "prefer-stable": true
 }
