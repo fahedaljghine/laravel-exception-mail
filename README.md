@@ -14,7 +14,7 @@ You can hire me to help you get your business online, consulting, conflict solvi
 
 You can install the package via composer:
 ``` bash
-$ composer require fahedaljghine/laravel-exception-mail
+composer require fahedaljghine/laravel-exception-mail
 ```
 
 The package will automatically register itself.
@@ -22,7 +22,7 @@ The package will automatically register itself.
 You must publish the config with:
 
 ```bash
-$ php artisan vendor:publish --provider="Fahedaljghine\ExceptionMail\ExceptionMailServiceProvider" --tag="config
+php artisan vendor:publish --provider="Fahedaljghine\ExceptionMail\ExceptionMailServiceProvider" --tag="config
 ```
 
 This is the contents of the file which will be published at `config/exception-mail.php`
