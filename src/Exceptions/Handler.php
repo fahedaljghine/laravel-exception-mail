@@ -63,7 +63,9 @@ class Handler extends ExceptionHandler
 
     public function sendEmail(Throwable $e)
     {
-        $addresses = Config::get('exception-mail.addresses', []);
-        Mail::to($addresses)->send(new ExceptionOccurred($e->getMessage()));
+        if (Config::get('enabled')) {
+            $addresses = Config::get('exception-mail.addresses', []);
+            Mail::to($addresses)->send(new ExceptionOccurred($e->getMessage()));
+        }
     }
 }
