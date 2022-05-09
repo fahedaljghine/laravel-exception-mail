@@ -5,10 +5,10 @@
 
 This package will allow you to specify email addresses to send them all the exceptions that occurs in Laravel application.
 
-## Hire Me
+## Contact Me
 
-You can hire me to help you get your business online, consulting, conflict solving, building up your development team and whatever you need for a web solutions. You can check all of my information by [Checking my website](https://fahedaljghine.com/).
-
+You can check all of my information
+by [Checking my website](https://fahedaljghine.com/).
 
 ## Installation
 
