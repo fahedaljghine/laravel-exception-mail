@@ -62,7 +62,9 @@ Please see [CHANGELOG](CHANGELOG.md) for more information what has changed recen
 
 You are welcome to contribute
 
-
+## Dontae
+ - [Paypal](https://www.paypal.com/donate/?hosted_button_id=MSKWTL27YPFDW)
+ 
 ## Credits
 
 - [Fahed Aljghine](https://github.com/fahedaljghine)
